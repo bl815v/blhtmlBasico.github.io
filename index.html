@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>Hola, mundo!</title>
+        <script src="funcion.js"></script>
     </head>
     <body>
         <h3 class="titulo">Hola, mundo!</h3>
         <table Border=3 class="tabla" style="margin: 0 auto; text-align: center;">
             <tr>
                 <td colspan=3>
-                    <h3>Plataformas de streaming de música 2022</h3>
+                    <h3>Plataformas de streaming de música</h3>
                 </td>
             </tr>
             <tr>
@@ -24,7 +25,7 @@
             </tr>
             <tr>
                 <td>
-                    <input>
+                    <input type="text" id="nombre1" placeholder="Escribe una plataforma...">
                 </td>
                 <td>
                     <input>
@@ -64,7 +65,7 @@
             </tr>
             <tr>
                 <td colspan="3">
-                    <button type="button">Boton</button>
+                    <button type="button" onclick="guardarDatos()">Guardar datos</button>
                 </td>
             </tr>
         </table>
