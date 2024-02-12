@@ -1,0 +1,22 @@
+.titulo {
+    text-align: center;
+
+}
+
+.tabla {
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: Arial;
+	margin: 0 auto;
+
+}
+
+.textoInferior{
+    font-family: Arial;
+
+}
+
+.imagenTabla{
+	width:500px; 
+	height:50%; 
+}
