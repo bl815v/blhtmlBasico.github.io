@@ -10,7 +10,7 @@ function guardarDatos() {
     for (var j = 0; j < datos.length; j++) {
         if (datos[j].nombre && datos[j].porcentaje) {
             parametrosUrl += '&nomb' + (j + 1) + '=' + encodeURIComponent(datos[j].nombre);
-            parametrosUrl += '&Porc' + (j + 1) + '=' + encodeURIComponent(datos[j].porcentaje);
+            parametrosUrl += '&porc' + (j + 1) + '=' + encodeURIComponent(datos[j].porcentaje);
         }
     }
 
