@@ -3,11 +3,12 @@
 
 }
 
-.tabla {
+.tabla,th,td {
     text-align: center;
-    background-color: rgb(214, 184, 145);
+    background-color: rgb(224, 198, 162);
     font-family: Arial;
 	margin: 0 auto;
+    border: 1px  solid black;
 
 }
 

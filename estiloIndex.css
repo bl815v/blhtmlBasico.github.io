@@ -3,12 +3,23 @@
 
 }
 
-.tabla {
+.tituloTabla {
+    background-color: rgb(235, 207, 156);
+}
+
+.tabla,th,td {
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(235, 213, 185);
     font-family: Arial;
 	margin: 0 auto;
+    border: 1px  solid black;
 
+}
+
+input {
+    background-color: rgb(235, 213, 185);
+    font-family: Arial;
+    border: 1px  solid black;
 }
 
 .textoInferior{
@@ -18,5 +29,6 @@
 
 .imagenTabla{
 	width:500px; 
-	height:50%; 
+	height:50%;
+
 }

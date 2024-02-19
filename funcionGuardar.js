@@ -28,8 +28,30 @@ function guardarDatos() {
 }
 
 
-// Funcion del boton
+function obtenerDatos() {
+    var parametrosUrl = new URLSearchParams(window.location.search);
+    for (var i = 1; i <= 5; i++) {
+        var nombre = parametrosUrl.get('nomb' + i);
+        var porcentaje = parametrosUrl.get('Porc' + i);
+        document.getElementById('nombre' + i).textContent = nombre || '';
+        document.getElementById('Porcentaje' + i).textContent = (porcentaje || '') + '%';
+    }
+}
+
+function volver() {
+    window.location.href = 'index.html'
+}
+
+document.addEventListener('DOMContentLoaded', obtenerDatos);
+
+// Funcion del boton guardar
 document.addEventListener("DOMContentLoaded", function() {
     const boton1 = document.getElementById("guardar");
     boton1.addEventListener("click", guardarDatos);
+});
+
+// Funcion del boton volver
+document.addEventListener("DOMContentLoaded", function() {
+    const boton2 = document.getElementById("volver");
+    boton2.addEventListener("click", volver);
 });
